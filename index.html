@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <div class="wrapHeader">
+      <h1>IP Address Tracker</h1>
+      <label for="inputIp">
+        <input type="text" id="inputIp" placeholder="Search for any IP address or domain">
+        <button id="btnSearchIp"><img src="images/icon-arrow.svg" alt="icon arrow" ></button>
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrapData">
+      <div class="data">
+        <p>IP Address</p>
+        <span id="dataIp">192.212.174.101</span>
+      </div>
+      <div class="data">
+        <p>Location</p>
+        <span id="dataLocation">California, South San Gabriel</span>
+      </div>
+      <div class="data">
+        <p>Timezone</p>
+        <span>UTC </span>
+        <span id="dataTime">-07:00</span>
+      </div>
+      <div class="data">
+        <p>ISP</p>
+        <span id="dataISP">Southern California Edison</span>
+      </div>
+    </div>
+  
+    <div id="map"></div>
+  </main>
+  <script src="index.js"></script>
+  
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMNwZNRB7FEr_6adl-rP1rYzvLy4xLXGs&callback=viewMap">
+  </script>
+</body>
+</html>

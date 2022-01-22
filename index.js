@@ -29,6 +29,7 @@ function getLocation(){
       lng = position.coords.longitude;
       updatemap(lat,lng)
     },err => {
+      getIpClient(true);
     });
   }
 }
